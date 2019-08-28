@@ -1,11 +1,11 @@
-#switch-address
+# switch-address
 
-##安装
+## 安装
 使用npm
 ```
 $ npm install switch-address
 ```
-##例子
+## 例子
 ```
 // 引入模块
 import SwitchAddress from 'switch-address'
@@ -33,8 +33,8 @@ if (switchAddress.env !== 'mock') {
   config.headers['X-TOKEN'] = Storage.getToken()
 }
 ```
-##switch-address API
-#####new SwitchAddress(config)
+## switch-address API
+##### new SwitchAddress(config)
 ```
 new SwitchAddress({
   address: {
@@ -43,7 +43,7 @@ new SwitchAddress({
   }
 })
 ```
-#####实例对象属性
+##### 实例对象属性
 switchAddress.env--切换的环境名称
 ```
 const switchAddress = new SwitchAddress({
@@ -62,7 +62,7 @@ const switchAddress = new SwitchAddress({
 })
 switchAddress.address
 ```
-##SwitchAddress Config
+## SwitchAddress Config
 ```
 {
   // 环境和请求地址映射，必填
